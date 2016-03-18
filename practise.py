@@ -7,6 +7,7 @@ from pandas import DataFrame
 import datetime
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import GaussianNB
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.cluster import KMeans
@@ -43,7 +44,8 @@ for day in range(2, training_files):
 
 	#print file_article_string 
 	date = dataset["date"]
-	print date + "\n\n+++++\n\n+++++\n\n+++++\n\n" + str(day) + ". day"
+	print str(day) + ". day\'s features extracted"
+	#print date + "\n\n+++++\n\n+++++\n\n+++++\n\n" + str(day) + ". day"
 	
 	#find the closing price of today
 	if os.path.isfile(price_directory + date + "_DJI.json"):
@@ -58,8 +60,8 @@ for day in range(2, training_files):
 	#find the closing price of tomorrow or one of the following days (in case tomorrow is a holiday)
 	count = 0
 	while not os.path.isfile(price_directory + str(tomorrow)[0:10] + "_DJI.json"):
-		print tomorrow
-		print price_directory + str(tomorrow)[0:10] + "_DJI.json "
+		#print tomorrow
+		#print price_directory + str(tomorrow)[0:10] + "_DJI.json "
 		tomorrow += datetime.timedelta(days=1)
 		count += 1
 		if count == 5: 
@@ -79,7 +81,7 @@ for day in range(2, training_files):
 	else: 
 		movement = "rising"
 
-	print "Today close: " + str(today_close) + " -> Moro close: " + str(moro_close) + " Movement: " + movement
+	#print "Today close: " + str(today_close) + " -> Moro close: " + str(moro_close) + " Movement: " + movement
 
 	rows.append({ "text" : file_article_string , "class" : movement})
 	index.append(day)
@@ -113,7 +115,8 @@ targets = data_frame['class'].values
 
 
 def clssfyWith(classifier, cluster):
-	
+	print "parameters: " + str(classifier.get_params())
+
 	if cluster : 
 		predictions = classifier.fit_predict(counts)
 
@@ -174,7 +177,9 @@ for day in range(training_files, number_of_files):
 
 	#print file_article_string 
 	date = dataset["date"]
-	print date + "\n\n+++++\n\n+++++\n\n+++++\n\n" + str(day) + ". day"
+	
+	print str(day) + ". day\'s features extracted"
+	#print date + "\n\n+++++\n\n+++++\n\n+++++\n\n" + str(day) + ". day\'s features extracted"
 	
 	#find the closing price of today
 	if os.path.isfile(price_directory + date + "_DJI.json"):
@@ -189,8 +194,8 @@ for day in range(training_files, number_of_files):
 	#find the closing price of tomorrow or one of the following days (in case tomorrow is a holiday)
 	count = 0
 	while not os.path.isfile(price_directory + str(tomorrow)[0:10] + "_DJI.json"):
-		print tomorrow
-		print price_directory + str(tomorrow)[0:10] + "_DJI.json "
+		#print tomorrow
+		#print price_directory + str(tomorrow)[0:10] + "_DJI.json "
 		tomorrow += datetime.timedelta(days=1)
 		count += 1
 		if count == 5: 
@@ -210,7 +215,7 @@ for day in range(training_files, number_of_files):
 	else: 
 		movement = "rising"
 
-	print "Today close: " + str(today_close) + " -> Moro close: " + str(moro_close) + " Movement: " + movement
+	#print "Today close: " + str(today_close) + " -> Moro close: " + str(moro_close) + " Movement: " + movement
 
 	test_rows.append({ "text" : file_article_string , "class" : movement})
 	test_index.append(day)
@@ -261,12 +266,32 @@ print "Total Number of Predictions SVM: " + str(pred_lengthSVM)
 #classifierSVM = svm.SVC()
 
 for clssfr, cluster, name in (
-	(MultinomialNB(), False, "Naive Bayes"),
-	(RandomForestClassifier(), False, "Random Forest Classifier"),
+	(MultinomialNB(alpha=0.0), False, "Naive Bayes"),
+	#default alpha value is 1.0
+	(MultinomialNB(alpha=1.0), False, "Naive Bayes"),
+	(MultinomialNB(alpha=2.0), False, "Naive Bayes"),
+	(MultinomialNB(alpha=3.0), False, "Naive Bayes"),
+	(MultinomialNB(alpha=5.0), False, "Naive Bayes"),
+	(MultinomialNB(alpha=7.0), False, "Naive Bayes"),
+	(MultinomialNB(alpha=15.0), False, "Naive Bayes"),
+	(MultinomialNB(alpha=25.0), False, "Naive Bayes"),
+	#default n_estimators value 10
+	(RandomForestClassifier(n_estimators=10), False, "Random Forest Classifier"),
+	(RandomForestClassifier(n_estimators=20), False, "Random Forest Classifier"),
+	(RandomForestClassifier(n_estimators=30), False, "Random Forest Classifier"),
+	(RandomForestClassifier(n_estimators=30, verbose=5), False, "Random Forest Classifier"),
+	(RandomForestClassifier(n_estimators=30, verbose=20), False, "Random Forest Classifier"),
+	(RandomForestClassifier(n_estimators=40, n_jobs=-1), False, "Random Forest Classifier"),
+	(RandomForestClassifier(n_estimators=40), False, "Random Forest Classifier"),
 	(DecisionTreeClassifier(), False, "Decision Tree Classifier"),
 	#(KMeans(n_clusters=3), True, "KMeans with 3 Clusters"),
 	#(KMeans(n_clusters=8), True, "KMeans with 8 Clusters"),
-	(svm.SVC(), False, "Support Vector Machines"),):
+	(svm.SVC(), False, "Support Vector Machines"),
+	(svm.SVC(kernel='linear'), False, "Support Vector Machines"),
+	(svm.SVC(C=2.0), False, "Support Vector Machines"),
+	(svm.SVC(C=4.0), False, "Support Vector Machines"),
+	(svm.SVC(C=8.0), False, "Support Vector Machines"),
+	(svm.SVC(C=20.0), False, "Support Vector Machines"),):
 	print "\n"+name
 	clssfyWith(clssfr, cluster)
 
