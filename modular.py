@@ -146,8 +146,9 @@ def prepareData(start_day, num_of_affected_days, num_of_training_files):
     return data_frame
 
 
-
-
+######################
+# INITIAL CONDITIONS #
+######################
 
 number_of_files = len(os.listdir(article_directory))
 
@@ -157,7 +158,7 @@ num_of_training_files = number_of_files * 9 / 10
 
 print "Number of training files", num_of_training_files
 
-num_of_affected_days = 3
+num_of_affected_days = 3 #up to specified number of days 
 
 for days in range(1, num_of_affected_days + 1):
 
@@ -183,22 +184,39 @@ for days in range(1, num_of_affected_days + 1):
 
     real_values = test_data_frame["class"].values
 
+    classifiersArray = []
+
+
     min_samples_splits = [5,7,10]
     max_depths = [5,10,20]
+    naive_bayes_alphas = [0.0, 1.0, 2.0, 3.0, 5.0, 7.0, 15.0, 25.0]
+    n_estimators = [10, 20, 30, 40]
+    Cs = [2.0, 4.0, 8.0, 20.0]
 
-    classifiers = []
+    #classifiers = []
+
+
+
+    for i in naive_bayes_alphas:
+        classifiersArray.append({'name': "Naive Bayes", 'classifier': MultinomialNB(alpha=i)})
+
+    for i in n_estimators:
+        classifiersArray.append({'name': "RandomForestClassifier", 'classifier': RandomForestClassifier(n_estimators=i)})
+
+    for i in Cs:
+        classifiersArray.append({'name': "Support Vector Machines", 'classifier': svm.SVC(C=i)})
 
     for i in min_samples_splits:   
-        classifiers.append(DecisionTreeClassifier(min_samples_split=i))
+        classifiersArray.append({'name' : 'DecisionTreeClassifier', 'classifier': DecisionTreeClassifier(min_samples_split=i)})
 
     for i in max_depths:
-        classifiers.append(DecisionTreeClassifier(max_depth=i))
+        classifiersArray.append({'name' : 'DecisionTreeClassifier', 'classifier': DecisionTreeClassifier(max_depth=i)})
 
-    for clssfr in classifiers:
-        name = "Decision Tree Classifier"
+    for clssfr in classifiersArray:
+        
 
-        print "Classifying with", name
-        clssfyWith(real_values, example_counts, counts, targets, clssfr)
+        print "\nClassifying with", clssfr['name']
+        clssfyWith(real_values, example_counts, counts, targets, clssfr['classifier'])
 
 
 
