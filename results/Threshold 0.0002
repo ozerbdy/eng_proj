@@ -1,0 +1,183 @@
+Threshold 0.0002
+Number of files 2739
+Number of training files 2465
+Number of affected days 1
+Each "."(dot) represents 200 days
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+Total number of days prepared 2462
+Each "."(dot) represents 200 days
+.
+
+Total number of days prepared 273
+
+Classifying with Naive Bayes
+parameters: {'alpha': 0.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:126
+Total Number of Predictions:273
+
+Classifying with Naive Bayes
+parameters: {'alpha': 1.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:129
+Total Number of Predictions:273
+
+Classifying with Naive Bayes
+parameters: {'alpha': 2.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:134
+Total Number of Predictions:273
+
+Classifying with Naive Bayes
+parameters: {'alpha': 3.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:130
+Total Number of Predictions:273
+
+Classifying with Naive Bayes
+parameters: {'alpha': 5.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:137
+Total Number of Predictions:273
+
+Classifying with Naive Bayes
+parameters: {'alpha': 7.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:139
+Total Number of Predictions:273
+
+Classifying with Naive Bayes
+parameters: {'alpha': 15.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:140
+Total Number of Predictions:273
+
+Classifying with Naive Bayes
+parameters: {'alpha': 25.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:140
+Total Number of Predictions:273
+Number of affected days 2
+Each "."(dot) represents 200 days
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+Total number of days prepared 2461
+Each "."(dot) represents 200 days
+.
+
+Total number of days prepared 272
+
+Classifying with Naive Bayes
+parameters: {'alpha': 0.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:127
+Total Number of Predictions:272
+
+Classifying with Naive Bayes
+parameters: {'alpha': 1.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:124
+Total Number of Predictions:272
+
+Classifying with Naive Bayes
+parameters: {'alpha': 2.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:132
+Total Number of Predictions:272
+
+Classifying with Naive Bayes
+parameters: {'alpha': 3.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:135
+Total Number of Predictions:272
+
+Classifying with Naive Bayes
+parameters: {'alpha': 5.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:131
+Total Number of Predictions:272
+
+Classifying with Naive Bayes
+parameters: {'alpha': 7.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:136
+Total Number of Predictions:272
+
+Classifying with Naive Bayes
+parameters: {'alpha': 15.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:139
+Total Number of Predictions:272
+
+Classifying with Naive Bayes
+parameters: {'alpha': 25.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:139
+Total Number of Predictions:272
+Number of affected days 3
+Each "."(dot) represents 200 days
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+Total number of days prepared 2460
+Each "."(dot) represents 200 days
+.
+
+Total number of days prepared 269
+
+Classifying with Naive Bayes
+parameters: {'alpha': 0.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:124
+Total Number of Predictions:269
+
+Classifying with Naive Bayes
+parameters: {'alpha': 1.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:124
+Total Number of Predictions:269
+
+Classifying with Naive Bayes
+parameters: {'alpha': 2.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:127
+Total Number of Predictions:269
+
+Classifying with Naive Bayes
+parameters: {'alpha': 3.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:127
+Total Number of Predictions:269
+
+Classifying with Naive Bayes
+parameters: {'alpha': 5.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:132
+Total Number of Predictions:269
+
+Classifying with Naive Bayes
+parameters: {'alpha': 7.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:131
+Total Number of Predictions:269
+
+Classifying with Naive Bayes
+parameters: {'alpha': 15.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:138
+Total Number of Predictions:269
+
+Classifying with Naive Bayes
+parameters: {'alpha': 25.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:139
+Total Number of Predictions:269
