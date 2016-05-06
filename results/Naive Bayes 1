@@ -1,0 +1,108 @@
+Naive Bayes
+'alpha': 0.0
+Correct:132
+Total:303
+
+Naive Bayes
+'alpha': 1.0
+Correct:128
+Total:303
+
+Naive Bayes
+'alpha': 2.0
+Correct:135
+Total:303
+
+Naive Bayes
+'alpha': 3.0
+Correct:135
+Total:303
+
+Naive Bayes
+'alpha': 5.0
+Correct:134
+Total:303
+
+Naive Bayes
+'alpha': 7.0
+Correct:137
+Total:303
+
+Naive Bayes
+'alpha': 15.0
+Correct:137
+Total:303
+
+Naive Bayes
+'alpha': 25.0
+Correct:137
+Total:303
+
+Random Forest Classifier
+'n_estimators': 10
+Correct:136
+Total:303
+
+Random Forest Classifier
+'n_estimators': 20
+Correct:126
+Total:303
+
+Random Forest Classifier
+'n_estimators': 30
+Correct:128
+Total:303
+
+Random Forest Classifier
+'verbose': 5,  'n_estimators': 30
+Correct:142
+Total:303
+
+Random Forest Classifier
+'verbose': 20,  'n_estimators': 30
+Correct:126
+Total:303
+
+Random Forest Classifier
+'n_estimators': 40
+Correct:125
+Total:303
+
+Random Forest Classifier
+'n_estimators': 40
+Correct:121
+Total:303
+
+Decision Tree Classifier
+Correct:122
+Total:303
+
+Support Vector Machines
+'kernel': 'rbf', 'C': 1.0, 
+Correct:137
+Total:303
+
+Support Vector Machines
+'kernel': 'linear', 'C': 1.0, 
+Correct:112
+Total:303
+
+Support Vector Machines
+'kernel': 'rbf', 'C': 2.0, 
+Correct:140
+Total:303
+
+Support Vector Machines
+'kernel': 'rbf', 'C': 4.0, 
+Correct:144
+Total:303
+
+Support Vector Machines
+'kernel': 'rbf', 'C': 8.0, 
+Correct:141
+Total:303
+
+Support Vector Machines
+'kernel': 'rbf', 'C': 20.0, 
+Correct:143
+Total:303

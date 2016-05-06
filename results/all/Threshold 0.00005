@@ -1,0 +1,293 @@
+Number of files 2739
+Number of training files 2465
+Number of affected days 1
+Total number of days prepared 2462
+number of falling is 1109
+number of neutral is 13
+number of rising is 1340
+Total number of days prepared 273
+number of falling is 128
+number of neutral is 5
+number of rising is 140
+Classifying with Naive Bayes
+parameters: {'alpha': 0.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:128
+Total Number of Predictions:273
+Classifying with Naive Bayes
+parameters: {'alpha': 1.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:128
+Total Number of Predictions:273
+Classifying with Naive Bayes
+parameters: {'alpha': 2.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:132
+Total Number of Predictions:273
+Classifying with Naive Bayes
+parameters: {'alpha': 3.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:132
+Total Number of Predictions:273
+Classifying with Naive Bayes
+parameters: {'alpha': 5.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:130
+Total Number of Predictions:273
+Classifying with Naive Bayes
+parameters: {'alpha': 7.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:140
+Total Number of Predictions:273
+Classifying with Naive Bayes
+parameters: {'alpha': 15.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:140
+Total Number of Predictions:273
+Classifying with Naive Bayes
+parameters: {'alpha': 25.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:140
+Total Number of Predictions:273
+Classifying with RandomForestClassifier
+parameters: {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 10, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': 'auto', 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:136
+Total Number of Predictions:273
+Classifying with RandomForestClassifier
+parameters: {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 20, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': 'auto', 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:129
+Total Number of Predictions:273
+Classifying with RandomForestClassifier
+parameters: {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 30, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': 'auto', 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:127
+Total Number of Predictions:273
+Classifying with RandomForestClassifier
+parameters: {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 40, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': 'auto', 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:144
+Total Number of Predictions:273
+Classifying with Support Vector Machines
+parameters: {'kernel': 'rbf', 'C': 2.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+Number of Correct Predictions:142
+Total Number of Predictions:273
+Classifying with Support Vector Machines
+parameters: {'kernel': 'rbf', 'C': 4.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+Number of Correct Predictions:147
+Total Number of Predictions:273
+Classifying with Support Vector Machines
+parameters: {'kernel': 'rbf', 'C': 8.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+Number of Correct Predictions:148
+Total Number of Predictions:273
+Classifying with Support Vector Machines
+parameters: {'kernel': 'rbf', 'C': 20.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+Number of Correct Predictions:146
+Total Number of Predictions:273
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:135
+Total Number of Predictions:273
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 7, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:135
+Total Number of Predictions:273
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 10, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:139
+Total Number of Predictions:273
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 5, 'class_weight': None}
+Number of Correct Predictions:135
+Total Number of Predictions:273
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 10, 'class_weight': None}
+Number of Correct Predictions:134
+Total Number of Predictions:273
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 20, 'class_weight': None}
+Number of Correct Predictions:137
+Total Number of Predictions:273
+Number of affected days 2
+Total number of days prepared 2461
+number of falling is 1109
+number of neutral is 13
+number of rising is 1339
+Total number of days prepared 272
+number of falling is 128
+number of neutral is 5
+number of rising is 139
+Classifying with Naive Bayes
+parameters: {'alpha': 0.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:129
+Total Number of Predictions:272
+Classifying with Naive Bayes
+parameters: {'alpha': 1.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:124
+Total Number of Predictions:272
+Classifying with Naive Bayes
+parameters: {'alpha': 2.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:131
+Total Number of Predictions:272
+Classifying with Naive Bayes
+parameters: {'alpha': 3.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:135
+Total Number of Predictions:272
+Classifying with Naive Bayes
+parameters: {'alpha': 5.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:130
+Total Number of Predictions:272
+Classifying with Naive Bayes
+parameters: {'alpha': 7.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:131
+Total Number of Predictions:272
+Classifying with Naive Bayes
+parameters: {'alpha': 15.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:139
+Total Number of Predictions:272
+Classifying with Naive Bayes
+parameters: {'alpha': 25.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:139
+Total Number of Predictions:272
+Classifying with RandomForestClassifier
+parameters: {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 10, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': 'auto', 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:147
+Total Number of Predictions:272
+Classifying with RandomForestClassifier
+parameters: {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 20, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': 'auto', 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:131
+Total Number of Predictions:272
+Classifying with RandomForestClassifier
+parameters: {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 30, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': 'auto', 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:143
+Total Number of Predictions:272
+Classifying with RandomForestClassifier
+parameters: {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 40, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': 'auto', 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:136
+Total Number of Predictions:272
+Classifying with Support Vector Machines
+parameters: {'kernel': 'rbf', 'C': 2.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+Number of Correct Predictions:142
+Total Number of Predictions:272
+Classifying with Support Vector Machines
+parameters: {'kernel': 'rbf', 'C': 4.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+Number of Correct Predictions:144
+Total Number of Predictions:272
+Classifying with Support Vector Machines
+parameters: {'kernel': 'rbf', 'C': 8.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+Number of Correct Predictions:139
+Total Number of Predictions:272
+Classifying with Support Vector Machines
+parameters: {'kernel': 'rbf', 'C': 20.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+Number of Correct Predictions:141
+Total Number of Predictions:272
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:131
+Total Number of Predictions:272
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 7, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:135
+Total Number of Predictions:272
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 10, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:135
+Total Number of Predictions:272
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 5, 'class_weight': None}
+Number of Correct Predictions:135
+Total Number of Predictions:272
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 10, 'class_weight': None}
+Number of Correct Predictions:135
+Total Number of Predictions:272
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 20, 'class_weight': None}
+Number of Correct Predictions:137
+Total Number of Predictions:272
+Number of affected days 3
+Total number of days prepared 2460
+number of falling is 1109
+number of neutral is 13
+number of rising is 1338
+Total number of days prepared 269
+number of falling is 125
+number of neutral is 5
+number of rising is 139
+Classifying with Naive Bayes
+parameters: {'alpha': 0.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:126
+Total Number of Predictions:269
+Classifying with Naive Bayes
+parameters: {'alpha': 1.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:124
+Total Number of Predictions:269
+Classifying with Naive Bayes
+parameters: {'alpha': 2.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:125
+Total Number of Predictions:269
+Classifying with Naive Bayes
+parameters: {'alpha': 3.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:129
+Total Number of Predictions:269
+Classifying with Naive Bayes
+parameters: {'alpha': 5.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:131
+Total Number of Predictions:269
+Classifying with Naive Bayes
+parameters: {'alpha': 7.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:132
+Total Number of Predictions:269
+Classifying with Naive Bayes
+parameters: {'alpha': 15.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:139
+Total Number of Predictions:269
+Classifying with Naive Bayes
+parameters: {'alpha': 25.0, 'fit_prior': True, 'class_prior': None}
+Number of Correct Predictions:138
+Total Number of Predictions:269
+Classifying with RandomForestClassifier
+parameters: {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 10, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': 'auto', 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:129
+Total Number of Predictions:269
+Classifying with RandomForestClassifier
+parameters: {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 20, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': 'auto', 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:136
+Total Number of Predictions:269
+Classifying with RandomForestClassifier
+parameters: {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 30, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': 'auto', 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:130
+Total Number of Predictions:269
+Classifying with RandomForestClassifier
+parameters: {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 40, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': 'auto', 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:132
+Total Number of Predictions:269
+Classifying with Support Vector Machines
+parameters: {'kernel': 'rbf', 'C': 2.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+Number of Correct Predictions:142
+Total Number of Predictions:269
+Classifying with Support Vector Machines
+parameters: {'kernel': 'rbf', 'C': 4.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+Number of Correct Predictions:137
+Total Number of Predictions:269
+Classifying with Support Vector Machines
+parameters: {'kernel': 'rbf', 'C': 8.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+Number of Correct Predictions:134
+Total Number of Predictions:269
+Classifying with Support Vector Machines
+parameters: {'kernel': 'rbf', 'C': 20.0, 'verbose': False, 'probability': False, 'degree': 3, 'shrinking': True, 'max_iter': -1, 'decision_function_shape': None, 'random_state': None, 'tol': 0.001, 'cache_size': 200, 'coef0': 0.0, 'gamma': 'auto', 'class_weight': None}
+Number of Correct Predictions:134
+Total Number of Predictions:269
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:139
+Total Number of Predictions:269
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 7, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:138
+Total Number of Predictions:269
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 10, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:141
+Total Number of Predictions:269
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 5, 'class_weight': None}
+Number of Correct Predictions:138
+Total Number of Predictions:269
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 10, 'class_weight': None}
+Number of Correct Predictions:129
+Total Number of Predictions:269
+Classifying with DecisionTreeClassifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 20, 'class_weight': None}
+Number of Correct Predictions:139
+Total Number of Predictions:269

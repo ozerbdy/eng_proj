@@ -1,0 +1,165 @@
+Number of files 3028
+Number of training files 2725
+Number of affected days 1
+Each "."(dot) represents 200 days
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+Total number of days prepared 2722
+Each "."(dot) represents 200 days
+.
+
+Total number of days prepared 302
+Traceback (most recent call last):
+  File "modular.py", line 195, in <module>
+    classifiers.append(DecisionTreeClassifier(max_depths=i))
+TypeError: __init__() got an unexpected keyword argument 'max_depths'
+angrylemon@8540qr:~/Desktop/Lectures/Engineering Project/learning$ python modular.py 
+Number of files 3028
+Number of training files 2725
+Number of affected days 1
+Each "."(dot) represents 200 days
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+Total number of days prepared 2722
+Each "."(dot) represents 200 days
+.
+
+Total number of days prepared 302
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:119
+Total Number of Predictions:302
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 7, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:125
+Total Number of Predictions:302
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 10, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:130
+Total Number of Predictions:302
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 5, 'class_weight': None}
+Number of Correct Predictions:135
+Total Number of Predictions:302
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 10, 'class_weight': None}
+Number of Correct Predictions:120
+Total Number of Predictions:302
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 20, 'class_weight': None}
+Number of Correct Predictions:134
+Total Number of Predictions:302
+Number of affected days 2
+Each "."(dot) represents 200 days
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+Total number of days prepared 2721
+Each "."(dot) represents 200 days
+.
+
+Total number of days prepared 301
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:123
+Total Number of Predictions:301
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 7, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:124
+Total Number of Predictions:301
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 10, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:121
+Total Number of Predictions:301
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 5, 'class_weight': None}
+Number of Correct Predictions:132
+Total Number of Predictions:301
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 10, 'class_weight': None}
+Number of Correct Predictions:137
+Total Number of Predictions:301
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 20, 'class_weight': None}
+Number of Correct Predictions:129
+Total Number of Predictions:301
+Number of affected days 3
+Each "."(dot) represents 200 days
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+Total number of days prepared 2720
+Each "."(dot) represents 200 days
+.
+
+Total number of days prepared 298
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:115
+Total Number of Predictions:298
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 7, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:116
+Total Number of Predictions:298
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 10, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': None, 'class_weight': None}
+Number of Correct Predictions:115
+Total Number of Predictions:298
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 5, 'class_weight': None}
+Number of Correct Predictions:139
+Total Number of Predictions:298
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 10, 'class_weight': None}
+Number of Correct Predictions:133
+Total Number of Predictions:298
+Classifying with Decision Tree Classifier
+parameters: {'presort': False, 'splitter': 'best', 'max_leaf_nodes': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': None, 'max_features': None, 'max_depth': 20, 'class_weight': None}
+Number of Correct Predictions:125
+Total Number of Predictions:298
