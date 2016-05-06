@@ -16,11 +16,13 @@ from sklearn.cluster import KMeans
 from sklearn import svm
 
 
-article_directory = "dataset/training/"
+article_directory = 'dataset/filtered_training/'#"dataset/training/"
 
 price_directory = "dataset/price/"
 
 threshold = 0.001
+
+
 
 
 def clssfyWith(real_values, example_counts, counts, targets, classifier):
@@ -43,8 +45,8 @@ def clssfyWith(real_values, example_counts, counts, targets, classifier):
 
 
 def prepareData(start_day, num_of_affected_days, num_of_training_files):
-    
-    
+
+
     datasetArr = {}
     for day in range(start_day + num_of_affected_days, num_of_training_files):
         dataset = json.load(
@@ -60,10 +62,10 @@ def prepareData(start_day, num_of_affected_days, num_of_training_files):
     rows = []
     index = []
 
-    
+
 
     for day in range(start_day + num_of_affected_days, num_of_training_files):
-        if counter % 200 == 199 : 
+        if counter % 200 == 199 :
             print '.'
         file_article_string = ""
         #print 'day', day
@@ -143,12 +145,22 @@ def prepareData(start_day, num_of_affected_days, num_of_training_files):
 
     data_frame = data_frame.reindex(numpy.random.permutation(data_frame.index))
 
+    countOfLabels = []
+
+    #print data_frame["class"].values.tolist().count()
+
+    labels = ["falling", "neutral", "rising"]
+    for label in labels:
+        print "number of", label, "is", data_frame["class"].values.tolist().count(label)
+
     return data_frame
 
 
 ######################
 # INITIAL CONDITIONS #
 ######################
+
+print 'Threshold', threshold
 
 number_of_files = len(os.listdir(article_directory))
 
@@ -158,7 +170,7 @@ num_of_training_files = number_of_files * 9 / 10
 
 print "Number of training files", num_of_training_files
 
-num_of_affected_days = 3 #up to specified number of days 
+num_of_affected_days = 3 #up to specified number of days
 
 for days in range(1, num_of_affected_days + 1):
 
@@ -206,14 +218,14 @@ for days in range(1, num_of_affected_days + 1):
     for i in Cs:
         classifiersArray.append({'name': "Support Vector Machines", 'classifier': svm.SVC(C=i)})
 
-    for i in min_samples_splits:   
+    for i in min_samples_splits:
         classifiersArray.append({'name' : 'DecisionTreeClassifier', 'classifier': DecisionTreeClassifier(min_samples_split=i)})
 
     for i in max_depths:
         classifiersArray.append({'name' : 'DecisionTreeClassifier', 'classifier': DecisionTreeClassifier(max_depth=i)})
 
     for clssfr in classifiersArray:
-        
+
 
         print "\nClassifying with", clssfr['name']
         clssfyWith(real_values, example_counts, counts, targets, clssfr['classifier'])
@@ -251,6 +263,3 @@ for clssfr, name in (
     clssfyWith(real_values, example_counts, counts, targets, clssfr)
 
 """
-
-
-
